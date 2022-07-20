@@ -1,0 +1,27 @@
+{
+  "name": "rataorana-web",
+  "version": "1.0.0",
+  "description": "En esta web podremos votar si los famosos más conocidos son ratas o ranas! Basado en la teoría del trinche.",
+  "main": "jquery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaspigz/RataORana-Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaspigz/RataORana-Web/issues"
+  },
+  "homepage": "https://github.com/gaspigz/RataORana-Web#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
