@@ -1,0 +1,82 @@
+/*NAV*/
+.mi-nav{
+	height: 10vh;
+    background-color: #d6d6d6;
+	overflow: hidden;
+}
+.login-nav-btn{
+	transition: all 0.3s;
+	overflow: hidden;
+
+	padding-top: 0.50rem;
+	padding-bottom: 0.50rem;
+	font-size: 1rem;
+	margin: 0;
+}
+.login-nav-btn:hover{
+	background-color: #dfdfdf;
+}
+
+/*CONTAINER*/
+.mi-container{
+    height: 78vh;
+    background-color: #fae5e5;
+}
+
+.bloque-game{
+    height: 60vh;
+    width: 100vw;
+    background-color: #b87171;
+    overflow: hidden;
+}
+.btn-rata{
+    width: 100vw;
+    background-color: #ff8282;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+.btn-rana{
+    width: 100vw;
+    background-color: #82a3ff;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+.btn-rata:hover{
+    cursor: pointer;
+    background-color: #c46565;
+}
+.btn-rana:hover{
+    cursor: pointer;
+    background-color: #5f78bd;
+}
+.btn-game:hover>.icono-btn{
+    font-size: 6rem;
+}
+.icono-btn{
+    transition: all 0.2s;
+    font-size: 5rem;
+}
+.barra{
+    margin-top: 2vh;
+}
+
+.img{
+    width: 100%;
+    background-image: url('https://media.theobjective.com/app/uploads/2022/07/112451/Brad-Pitt-1024x714.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*FOOTER*/
+.mi-footer{
+    height: 12vh;
+    background-color: #000000;
+    overflow: hidden;
+}
