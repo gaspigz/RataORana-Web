@@ -5,7 +5,7 @@
   "main": "jquery.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/gaspigz/RataORana-Web#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "jquery": "^3.6.0",
+    "mongoose": "^6.4.6",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.19"
   }
