@@ -6,7 +6,7 @@ router.get('/',async(req, res) => {
     //res.sendFile(__dirname + '/views/login.html'); //LO MANDA AL ARCHIVO login.html LA RUTA DEBE SER ABSOLUTA __dirname es el lugar desde donde se ejecuta
     // ASI LO ENVIARIAMOS SIN EJS // res.sendFile(path.join(__dirname, 'views/login.html')); //UNE AL DIRNAME CON EL LOGIN PERO NO DEPENDE DEL SO
     //EL ARCHIVO DEJA DE SER HTML Y ES EJS PARA QUE SEA PROCESADO POR EJS
-    let id = getRandomInt(1,11);
+    let id = getRandomInt(1,14);
     await pool.query('SELECT * FROM imagenes WHERE id=?',[id], function(err, results){
         if(results.length == 0){
             console.log('No hay imagenes con ese ID');
