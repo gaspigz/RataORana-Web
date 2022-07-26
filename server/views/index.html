@@ -11,70 +11,145 @@
 	<title>Rata o Rana</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg mi-nav navbar-light bg-light">
-        <div class="container-fluid d-flex justify-content-center align-content-center">
-            <a class="navbar-brand ms-3 text-dark" href="/" style="font-size: 1 rem;">🐀 O 🐸?</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
 
-            <ul class="navbar-nav ">
-
-                <li class="nav-item me-3 login-nav-btn">
-                <a class="nav-link active text-dark disabled" aria-current="page" href="#">Proponé a un famoso!</a>
-                </li>
-                <li class="nav-item me-3 login-nav-btn">
-
-                <a class="nav-link text-dark colorear-boton" href="https://www.instagram.com/gaspi01_/">Instagram!</a>
-
-                </li>
-                
-
-            </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid mi-container w-100 d-flex justify-content-center align-content-center">
-        
-            <div class="row col-md-8 bloque-game align-self-center">                
-                <button class="col-sm btn-rata btn-game" id="btn-rata">
-                    <p class="icono-btn">🐀</p>
+    <div class="pc-view">
+        <nav class="navbar sticky-top navbar-expand-lg mi-nav navbar-light bg-light">
+            <div class="container-fluid d-flex justify-content-center align-content-center">
+                <a class="navbar-brand ms-3 text-dark" href="/" style="font-size: 1 rem;">🐀 O 🐸?</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="col-sm-8 img" style="background-image: url(<%= imgurl %>);">
-                    <p id="imgurl" style="display:none;"><%= imgurl %></p>
-                    <div class="progress barra">
-                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: <%= votosrata %>%" aria-valuenow="<%= votosrata %>" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: <%= votosrana %>%" aria-valuenow="<%= votosrana %>" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+                <ul class="navbar-nav ">
+    
+                    <li class="nav-item me-3 login-nav-btn">
+                    <a class="nav-link active text-dark disabled" aria-current="page" href="#">Proponé a un famoso!</a>
+                    </li>
+                    <li class="nav-item me-3 login-nav-btn">
+    
+                    <a class="nav-link text-dark colorear-boton" href="https://www.instagram.com/gaspi01_/">Instagram!</a>
+    
+                    </li>
                     
+    
+                </ul>
                 </div>
-                <button class="col-sm btn-rana btn-game" id="btn-rana">
-                    <p class="icono-btn">🐸</p>
-                </button>   
-                     
             </div>
+        </nav>
+        <div class="container-fluid mi-container w-100 d-flex justify-content-center align-content-center">
             
-    </div>
-    <div class="container-nombre row">
-        <p class="nombre"><%= name %></p>
+                <div class="row col-md-8 bloque-game align-self-center">                
+                    <button class="col-sm btn-rata btn-game" id="btn-rata">
+                        <p class="icono-btn">🐀</p>
+                    </button>
+                    <div class="col-sm-8 img" style="background-image: url(<%= imgurl %>);">
+                        <p id="imgurl" style="display:none;"><%= imgurl %></p>
+                        <div class="progress barra">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: <%= votosrata %>%" aria-valuenow="<%= votosrata %>" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: <%= votosrana %>%" aria-valuenow="<%= votosrana %>" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        
+                    </div>
+                    <button class="col-sm btn-rana btn-game" id="btn-rana">
+                        <p class="icono-btn">🐸</p>
+                    </button>   
+                         
+                </div>
+                
+        </div>
+        <div class="container-nombre row">
+            <p class="nombre"><%= name %></p>
+        </div>
+    
+        <footer class="mi-footer">
+            <div class="container-fluid d-flex justify-content-center h-100 align-content-center">
+                <div class="row col-md-8 d-flex align-content-center align-self-center">                
+                    <div class="col-sm">
+                        <p class="text-center align-self-center text-light" >Creado por <a href="https://www.instagram.com/gaspi01_/">@Gaspi01_</a></p>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="text-center text-light" >Este es el primer prototipo de la página de ¿Rata o Rana?</p>
+                    </div>
+                    <div class="col-sm">
+                        <p class="text-center text-light" >Basado en la teoría creada por el Trinche</p>
+                    </div>         
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <footer class="mi-footer">
-        <div class="container-fluid d-flex justify-content-center h-100 align-content-center">
-            <div class="row col-md-8 d-flex align-content-center align-self-center">                
-                <div class="col-sm">
-                    <p class="text-center align-self-center text-light" >Creado por <a href="https://www.instagram.com/gaspi01_/">@Gaspi01_</a></p>
+    <div class="mobile-view">
+        <nav class="navbar sticky-top navbar-expand-lg mi-nav navbar-light bg-light">
+            <div class="container-fluid d-flex justify-content-center align-content-center">
+                <a class="navbar-brand ms-3 text-dark" href="/" style="font-size: 1 rem;">🐀 O 🐸?</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+                <ul class="navbar-nav ">
+    
+                    <li class="nav-item me-3 login-nav-btn">
+                    <a class="nav-link active text-dark disabled" aria-current="page" href="#">Proponé a un famoso!</a>
+                    </li>
+                    <li class="nav-item me-3 login-nav-btn">
+    
+                    <a class="nav-link text-dark colorear-boton" href="https://www.instagram.com/gaspi01_/">Instagram!</a>
+    
+                    </li>
+                    
+    
+                </ul>
                 </div>
-                <div class="col-sm-8">
-                    <p class="text-center text-light" >Este es el primer prototipo de la página de ¿Rata o Rana?</p>
-                </div>
-                <div class="col-sm">
-                    <p class="text-center text-light" >Basado en la teoría creada por el Trinche</p>
-                </div>         
             </div>
+        </nav>
+        <div class="container-fluid mi-container w-100 d-flex justify-content-center align-content-center">
+            
+                <div class="row col-md-8 bloque-game align-self-center">       
+                    <div class="col-sm-8 img" style="background-image: url(<%= imgurl %>);">
+                        <p id="imgurl" style="display:none;"><%= imgurl %></p>
+                        <div class="progress barra">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: <%= votosrata %>%" aria-valuenow="<%= votosrata %>" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: <%= votosrana %>%" aria-valuenow="<%= votosrana %>" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        
+                    </div>  
+                <div class="row">
+                    <button class="col-sm-6 btn-rata btn-game" id="btn-rata2">
+                        <p class="icono-btn">🐀</p>
+                    </button>
+                </div>
+                <div class="row">
+                    <button class="col-sm-6 btn-rana btn-game" id="btn-rana2">
+                        <p class="icono-btn">🐸</p>
+                    </button>
+                </div>   
+                       
+                </div>
+                
         </div>
-    </footer>
+        <div class="container-nombre row">
+            <p class="nombre"><%= name %></p>
+        </div>
+    
+        <footer class="mi-footer">
+            <div class="container-fluid d-flex justify-content-center h-100 align-content-center">
+                <div class="row col-md-8 d-flex align-content-center align-self-center">                
+                    <div class="col-sm">
+                        <p class="text-center align-self-center text-light" >Creado por <a href="https://www.instagram.com/gaspi01_/">@Gaspi01_</a></p>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="text-center text-light" >Este es el primer prototipo de la página de ¿Rata o Rana?</p>
+                    </div>
+                    <div class="col-sm">
+                        <p class="text-center text-light" >Basado en la teoría creada por el Trinche</p>
+                    </div>         
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity=
@@ -82,115 +157,13 @@
         crossorigin="anonymous">
     </script>
 
-
-    <script >
-        $(document).ready(function () {
-            var counter1 = 0;
-            var interval1 = setInterval(function(){
-                var opVal1 = 0;
-                if(counter1 <= 100){
-                    opVal1 = counter1/10;
-                    $('.nombre').css('opacity', opVal1);
-                    counter1++;
-                }else{
-                    clearInterval(interval1);
-                }
-            }, 10);
-    $('#btn-rata').click(function (e) {
-        e.preventDefault(); //Hacemos que no se refresque la página por defecto.
-
-        
-        var counter = 0;
-            var interval = setInterval(function(){
-                var opVal = 0;
-                if(counter <= 100){
-                    opVal = counter/100;
-                    $('.barra').css('opacity', opVal);
-                    counter++;
-                }else{
-                    clearInterval(interval);
-                }
-            }, 3);
-
-        let imgurl = $('#imgurl').text();
-        console.log(imgurl);
-        $.ajax({
-            url: 'http://localhost:3000/sumarata',
-            type: 'POST',
-            data: {
-                imgurl: imgurl
-            },
-            dataType: 'json',
-            success: function (response) {
-                
-            },
-            error: function (jqXHR, exception) {
-                console.log(jqXHR);
-            }
-        });
-
-        var counter2 = 0;
-            var interval2 = setInterval(function(){
-                
-                if(counter2 == 3){
-                    location.reload();
-                }
-                counter2++;
-            }, 1000);
-    });
-});
-    </script>
-
-<script >
-    $(document).ready(function () {
-$('#btn-rana').click(function (e) {
-    e.preventDefault(); //Hacemos que no se refresque la página por defecto.
-
-    var counter = 0;
-            var interval = setInterval(function(){
-                var opVal = 0;
-                if(counter <= 100){
-                    opVal = counter/100;
-                    $('.barra').css('opacity', opVal);
-                    counter++;
-                }else{
-                    clearInterval(interval);
-                }
-                
-            }, 3);
-
-    let imgurl = $('#imgurl').text();
-    console.log(imgurl);
-
-
-    $.ajax({
-        url: 'http://localhost:3000/sumarana',
-        type: 'POST',
-        data: {
-            imgurl: imgurl
-        },
-        dataType: 'json',
-        success: function (response) {
-            
-        },
-        error: function (jqXHR, exception) {
-            console.log(jqXHR);
-        }
-    });
-
-    var counter3 = 0;
-            var interval3 = setInterval(function(){
-                console.log('CONTADO3'+counter3);
-                if(counter3 == 3){
-                    location.reload();
-                }
-                counter3++;
-            }, 1000);
+<script src="js/rata.js">
     
-});
-});
 </script>
 
+<script src="js/rana.js">
+
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
