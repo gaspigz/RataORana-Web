@@ -108,3 +108,126 @@ button{
     background-color: #000000;
     overflow: hidden;
 }
+
+.mobile-view{
+    display: none;
+}
+
+/*CELULARES*/
+
+@media (max-width: 600px) {
+    .pc-view{
+        display: none;
+    }
+    .mobile-view{
+        display: block;
+    }
+    .mi-footer {
+      display: none;
+    }
+
+        /*NAV*/
+    .mi-nav{
+        height: 6vh;
+        background-color: #d6d6d6;
+        overflow: hidden;
+    }
+    .login-nav-btn{
+        transition: all 0.3s;
+        overflow: hidden;
+
+        padding-top: 0.50rem;
+        padding-bottom: 0.50rem;
+        font-size: 1rem;
+        margin: 0;
+    }
+    .login-nav-btn:hover{
+        background-color: #dfdfdf;
+    }
+
+    /*CONTAINER*/
+    button{
+        border: none;
+    }
+
+    .mi-container{
+        margin-top: 2vh;
+        height: 88vh;
+        background-color: #ffffff;
+    }
+
+    .bloque-game{
+        
+        height: 80vh;
+        width: 100vw;
+        background-color: #b87171;
+        overflow: hidden;
+    }
+    .btn-rata{
+        width: 50vw;
+        background-color: #ff8282;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s;
+    }
+    .btn-rana{
+        width: 500vw;
+        background-color: #82a3ff;
+        
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s;
+    }
+    .btn-rata:hover{
+        cursor: pointer;
+        background-color: #c46565;
+    }
+    .btn-rana:hover{
+        cursor: pointer;
+        background-color: #5f78bd;
+    }
+    .btn-game:hover>.icono-btn{
+        font-size: 6rem;
+    }
+    .icono-btn{
+        transition: all 0.2s;
+        font-size: 5rem;
+    }
+    .barra{
+        opacity: 0;
+        margin-top: 2vh;
+    }
+
+    .img{
+        width: 100%;
+        /*background-image: url('https://media.theobjective.com/app/uploads/2022/07/112451/Brad-Pitt-1024x714.jpg');*/
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .nombre{
+        align-self: center;
+        opacity: 0;
+        transition: all 0.2s;
+        font-size: 3rem;
+        font-weight: bold;
+        color: rgb(3, 3, 3);
+        margin-top: 55%;
+        text-align: center;
+    }
+
+    .container-nombre{
+        height: 6vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        text-align: center;
+    }
+
+  }
