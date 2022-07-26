@@ -23,11 +23,13 @@ button{
 }
 
 .mi-container{
-    height: 78vh;
+    margin-top: 2vh;
+    height: 60vh;
     background-color: #ffffff;
 }
 
 .bloque-game{
+    
     height: 60vh;
     width: 100vw;
     background-color: #b87171;
@@ -45,6 +47,7 @@ button{
 .btn-rana{
     width: 100vw;
     background-color: #82a3ff;
+    
     height: 60vh;
     display: flex;
     justify-content: center;
@@ -78,16 +81,24 @@ button{
     background-position: center;
     background-repeat: no-repeat;
 }
-.nombre{
 
-}
 .nombre{
+    align-self: center;
     opacity: 0;
     transition: all 0.2s;
     font-size: 3rem;
-    
-    color: rgb(255, 255, 255);
+    font-weight: bold;
+    color: rgb(3, 3, 3);
     margin-top: 55%;
+    text-align: center;
+}
+
+.container-nombre{
+    height: 16vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
     text-align: center;
 }
 
